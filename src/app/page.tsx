@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation'
  
 
-export default function index() {
+export default function Index() {
   const router = useRouter()
   setTimeout(()=>{
     router.push('/home', { scroll: false })
