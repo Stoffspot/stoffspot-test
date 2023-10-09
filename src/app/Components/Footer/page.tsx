@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="lg:w-2/6 md:w-1/2 w-full px-4">
         <h2 className="title-font font-bold text-gray-900 tracking-widest text-3xl mb-3 ">StoffSPot</h2>
         <h2 className="max-w-xs text-sm" style={{ fontFamily: 'AbeatbyKai' }}>
-        StoffSpot is a one-stop shop for all things recycling clothes. Whether you're looking to buy or sell, StoffSpot has you covered. With a wide selection of clothes to choose from, you're sure to find something you love. And, because StoffSpot is committed to sustainability, you can feel good knowing that your clothes are being recycled and reused</h2>
+        StoffSpot is a one-stop shop for all things recycling clothes. Whether you are looking to buy or sell, StoffSpot has you covered. With a wide selection of clothes to choose from, you are sure to find something you love. And, because StoffSpot is committed to sustainability, you can feel good knowing that your clothes are being recycled and reused</h2>
       </div>
       <div className="lg:w-1/6 md:w-1/2 w-full px-4">
         <h2 className="title-font font-bold text-gray-900 tracking-widest text-md mb-3">Other links:</h2>

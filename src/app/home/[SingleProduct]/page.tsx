@@ -17,20 +17,20 @@ export default function page({ params }: { params: { SingleProduct: string } }) 
         },
       };
       const tshirtcards = [
-        <Card id={"1"} url={'/Assets/products/t-shirt/IMG-20230828-WA0030.webp'} />,
-        <Card id={"2"} url={'/Assets/products/t-shirt/IMG-20230828-WA0031.webp'} />,
-        <Card id={"3"} url={'/Assets/products/t-shirt/IMG-20230828-WA0032.webp'} />,
-        <Card id={"4"} url={'/Assets/products/shirt/IMG-20230828-WA0011.webp'} />,
-        <Card id={"5"} url={'/Assets/products/shirt/IMG-20230828-WA0018.webp'} />,
-        <Card id={"6"} url={'/Assets/products/t-shirt/IMG-20230828-WA0032.webp'} />
+        <Card key={3} id={"1"} url={'/Assets/products/t-shirt/IMG-20230828-WA0030.webp'} />,
+        <Card key={4} id={"2"} url={'/Assets/products/t-shirt/IMG-20230828-WA0031.webp'} />,
+        <Card key={5} id={"3"} url={'/Assets/products/t-shirt/IMG-20230828-WA0032.webp'} />,
+        <Card key={6} id={"4"} url={'/Assets/products/shirt/IMG-20230828-WA0011.webp'} />,
+        <Card key={7} id={"5"} url={'/Assets/products/shirt/IMG-20230828-WA0018.webp'} />,
+        <Card key={8} id={"6"} url={'/Assets/products/t-shirt/IMG-20230828-WA0032.webp'} />
       ]
       const pantscards = [
-        <Card id={"1"} url={'/Assets/products/pants/IMG-20230828-WA0012.webp'} />,
-        <Card id={"2"} url={'/Assets/products/pants/IMG-20230828-WA0013.webp'} />,
-        <Card id={"3"} url={'/Assets/products/pants/IMG-20230828-WA0014.webp'} />,
-        <Card id={"3"} url={'/Assets/products/pants/IMG-20230828-WA0012.webp'} />,
-        <Card id={"3"} url={'/Assets/products/pants/IMG-20230828-WA0013.webp'} />,
-        <Card id={"4"} url={'/Assets/products/pants/IMG-20230828-WA0016.webp'} />
+        <Card key={9} id={"1"} url={'/Assets/products/pants/IMG-20230828-WA0012.webp'} />,
+        <Card key={10} id={"2"} url={'/Assets/products/pants/IMG-20230828-WA0013.webp'} />,
+        <Card key={11} id={"3"} url={'/Assets/products/pants/IMG-20230828-WA0014.webp'} />,
+        <Card key={12} id={"3"} url={'/Assets/products/pants/IMG-20230828-WA0012.webp'} />,
+        <Card key={13} id={"3"} url={'/Assets/products/pants/IMG-20230828-WA0013.webp'} />,
+        <Card key={14} id={"4"} url={'/Assets/products/pants/IMG-20230828-WA0016.webp'} />
       ]
     return (
         <>

@@ -8,24 +8,24 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import Link from 'next/link';
 import 'react-alice-carousel/lib/alice-carousel.css';
 const items = [
-  <Banner />,
-  <Banner />
+  <Banner key={1}/>,
+  <Banner key={2}/>
 ];
 const tshirtcards = [
-  <Card id={"1"} url={'./Assets/products/t-shirt/IMG-20230828-WA0030.webp'} />,
-  <Card id={"2"} url={'./Assets/products/t-shirt/IMG-20230828-WA0031.webp'} />,
-  <Card id={"3"} url={'./Assets/products/t-shirt/IMG-20230828-WA0032.webp'} />,
-  <Card id={"4"} url={'./Assets/products/shirt/IMG-20230828-WA0011.webp'} />,
-  <Card id={"5"} url={'./Assets/products/shirt/IMG-20230828-WA0018.webp'} />,
-  <Card id={"6"} url={'./Assets/products/t-shirt/IMG-20230828-WA0032.webp'} />
+  <Card key={3} id={"1"} url={'/Assets/products/t-shirt/IMG-20230828-WA0030.webp'} />,
+  <Card key={4} id={"2"} url={'/Assets/products/t-shirt/IMG-20230828-WA0031.webp'} />,
+  <Card key={5} id={"3"} url={'/Assets/products/t-shirt/IMG-20230828-WA0032.webp'} />,
+  <Card key={6} id={"4"} url={'/Assets/products/shirt/IMG-20230828-WA0011.webp'} />,
+  <Card key={7} id={"5"} url={'/Assets/products/shirt/IMG-20230828-WA0018.webp'} />,
+  <Card key={8} id={"6"} url={'/Assets/products/t-shirt/IMG-20230828-WA0032.webp'} />
 ]
 const pantscards = [
-  <Card id={"1"} url={'./Assets/products/pants/IMG-20230828-WA0012.webp'} />,
-  <Card id={"2"} url={'./Assets/products/pants/IMG-20230828-WA0013.webp'} />,
-  <Card id={"3"} url={'./Assets/products/pants/IMG-20230828-WA0014.webp'} />,
-  <Card id={"3"} url={'./Assets/products/pants/IMG-20230828-WA0012.webp'} />,
-  <Card id={"3"} url={'./Assets/products/pants/IMG-20230828-WA0013.webp'} />,
-  <Card id={"4"} url={'./Assets/products/pants/IMG-20230828-WA0016.webp'} />
+  <Card key={9} id={"1"} url={'/Assets/products/pants/IMG-20230828-WA0012.webp'} />,
+  <Card key={10} id={"2"} url={'/Assets/products/pants/IMG-20230828-WA0013.webp'} />,
+  <Card key={11} id={"3"} url={'/Assets/products/pants/IMG-20230828-WA0014.webp'} />,
+  <Card key={12} id={"3"} url={'/Assets/products/pants/IMG-20230828-WA0012.webp'} />,
+  <Card key={13} id={"3"} url={'/Assets/products/pants/IMG-20230828-WA0013.webp'} />,
+  <Card key={14} id={"4"} url={'/Assets/products/pants/IMG-20230828-WA0016.webp'} />
 ]
 const responsive = {
   0: { items: 1 },
@@ -231,7 +231,7 @@ function LandingPage() {
       </div>
       <div className="p-5 relative -top-20">
         <div className='md:p-3'>
-          <h3 className='mb-5 font-bold text-md md:text-lg'>Best of Men's clothings </h3>
+          <h3 className='mb-5 font-bold text-md md:text-lg'>Best of Mens clothings </h3>
           <div className="">
             <AliceCarousel responsive={responsive} mouseTracking items={tshirtcards} infinite={true} autoPlay={true} autoPlayInterval={2500} disableDotsControls
               renderPrevButton={() => (
@@ -279,7 +279,7 @@ function LandingPage() {
         </div>
         {/* best of women clothings */}
         <div className='md:p-3'>
-          <h3 className='mb-5 font-bold text-md md:text-lg'>Best of Men's Bottom Wear</h3>
+          <h3 className='mb-5 font-bold text-md md:text-lg'>Best of Mens Bottom Wear</h3>
           <div className="flex flex-row justify-between overflow-auto">
             <AliceCarousel responsive={responsive} mouseTracking items={pantscards} infinite={true} autoPlay={true} autoPlayInterval={2500} disableDotsControls
               renderPrevButton={() => (
@@ -465,9 +465,8 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category }) => {
       <h2 className="text-xl font-semibold mb-2 p-4">{heading}</h2>
       <div className="px-5 py-1" style={gridStyle}>
         {images.map((image, index) => (
-          <div>
+          <div key={image.image}>
             <img
-              key={image.image}
               src={image.image}
               alt={`${name} Image ${index}`}
               className="h-40 object-fit"
